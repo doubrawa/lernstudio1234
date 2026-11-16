@@ -400,6 +400,12 @@ h3 {
   color: var(--blue);
 }
 
+.hero__eyebrow {
+  margin-bottom: 26px;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+
 .hero__squiggle {
   width: min(100%, 380px);
   height: 12px;
@@ -1046,6 +1052,14 @@ h3 {
 .contact__card .label {
   margin-bottom: 6px;
   font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+.contact__hint {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 1rem;
   color: var(--ink-soft);
 }
 
