@@ -14,12 +14,18 @@
 <meta property="og:title" content="Nachhilfe in Deisenhausen bei Krumbach – Lernstudio 1234">
 <meta property="og:description" content="Schritt für Schritt leichter lernen: Nachhilfe in Deutsch und Mathe für die Klassen 1 bis 10 bei Lehrerin Angelika Schuster.">
 <meta property="og:url" content="https://lernstudio1234.de/">
+<meta property="og:image" content="https://lernstudio1234.de/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lernstudio 1234: Schritt für Schritt leichter lernen. Nachhilfe in Deisenhausen bei Krumbach.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="assets/img/favicon.png" sizes="48x48" type="image/png">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playwrite-de-la.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
 <script type="application/ld+json">
@@ -64,10 +70,10 @@
       <span class="brand__name">Lernstudio</span>
     </a>
     <nav class="nav" aria-label="Hauptnavigation">
-      <a href="#lernstudio">Lernstudio</a>
+      <a href="#lernstudio">Über mich</a>
       <a href="#angebot">Angebot</a>
-      <a href="#preise">Preise</a>
       <a href="#lesen">Lesetipps</a>
+      <a href="#preise">Preise</a>
       <a class="nav__cta" href="#kontakt">Kontakt</a>
     </nav>
   </div>
@@ -81,22 +87,30 @@
       <h1 id="hero-titel" class="hero__title">
         <span class="eyebrow hero__eyebrow">Nachhilfe in Deisenhausen bei Krumbach · Klasse&nbsp;1&nbsp;bis&nbsp;10</span>
         <span class="hero__title-main">Schritt für Schritt</span>
-        <span class="hero__title-script">leichter lernen.</span>
-        <svg class="hero__squiggle" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <span class="hero__title-script">leichter lernen.<svg class="hero__squiggle" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true" focusable="false">
           <path d="M3 8C50 2 100 11 150 6s100-3 147 1" fill="none" stroke="#D3302B" stroke-width="3.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-        </svg>
+        </svg></span>
       </h1>
       <p class="lead">Ich bin Angelika Schuster, ausgebildete Lehrerin. In meinem kleinen Lernstudio in Deisenhausen bei Krumbach lernen höchstens zwei Kinder gleichzeitig – mit Ruhe, mit Zeit und mit Freude an der Sache.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#kontakt">Kennenlernen vereinbaren</a>
-        <a class="phone-link" href="tel:+4982825743">
+        <!-- Breite Fenster: Sprung zum Kontakt und Telefonnummer. Schmale Fenster: Anruf als Hauptknopf und E-Mail. -->
+        <a class="btn btn--primary hero__wide" href="#kontakt">Kennenlernen vereinbaren</a>
+        <a class="contact-link hero__wide" href="tel:+4982825743">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           08282&nbsp;5743
+        </a>
+        <a class="btn btn--primary hero__narrow" href="tel:+4982825743">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Anrufen: 08282&nbsp;5743
+        </a>
+        <a class="contact-link hero__narrow" href="mailto:info@lernstudio1234.de">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          E-Mail schreiben
         </a>
       </div>
     </div>
     <nav class="steps" aria-label="Die vier Bereiche dieser Seite">
-      <a class="step step--1" href="#lernstudio"><span class="step__num">1</span><span class="step__label">Lernstudio</span></a>
+      <a class="step step--1" href="#lernstudio"><span class="step__num">1</span><span class="step__label">Über mich</span></a>
       <a class="step step--2" href="#angebot"><span class="step__num">2</span><span class="step__label">Angebot</span></a>
       <a class="step step--3" href="#preise"><span class="step__num">3</span><span class="step__label">Preise</span></a>
       <a class="step step--4" href="#kontakt"><span class="step__num">4</span><span class="step__label">Kontakt</span></a>
@@ -117,10 +131,7 @@
   <div class="wrap">
     <header class="section-head">
       <span class="num num--blue" aria-hidden="true">1</span>
-      <div>
-        <p class="eyebrow">Das Lernstudio</p>
-        <h2 id="lernstudio-titel">Zeit für Ihr Kind – und für das, was gerade schwerfällt.</h2>
-      </div>
+      <h2 id="lernstudio-titel">Zeit für Ihr Kind&nbsp;– und für das, was gerade schwerfällt.</h2>
     </header>
     <div class="about">
       <figure class="portrait" data-portrait>
@@ -128,8 +139,7 @@
         <p class="portrait__fallback">Liebe Eltern,<br>schön, dass Sie hier sind!</p>
       </figure>
       <div class="about__text">
-        <p>Mein Name ist Angelika Schuster. Ich bin ausgebildete Lehrerin und gebe Kindern und Jugendlichen der Klassen 1 bis 10 professionellen Nachhilfeunterricht.</p>
-        <p>Mit dem Lernstudio habe ich mir einen Herzenswunsch erfüllt: einen Ort, an dem Kinder in entspannter Atmosphäre lernen und ganzheitlich gefördert werden.</p>
+        <p>Mit dem Lernstudio habe ich mir einen Wunsch erfüllt: einen Ort, an dem Kinder und Jugendliche entspannt lernen können.</p>
         <p>Lernschwierigkeiten verschwinden nicht über Nacht. Sie nachhaltig zu überwinden braucht etwas Zeit – geben Sie Ihrem Kind und mir diese Zeit.</p>
         <p class="signature">Angelika Schuster</p>
       </div>
@@ -137,7 +147,7 @@
     <ul class="principles">
       <li>
         <h3>Kleine Gruppe</h3>
-        <p>Ich unterrichte ein bis zwei Kinder gleichzeitig, immer im selben Fach. So bleibt Zeit für jede Frage.</p>
+        <p>Am Tisch sitzen nie mehr als zwei Kinder. So bleibt Zeit für jede Frage.</p>
       </li>
       <li>
         <h3>Entspannt lernen</h3>
@@ -166,10 +176,7 @@
   <div class="wrap">
     <header class="section-head">
       <span class="num num--red" aria-hidden="true">2</span>
-      <div>
-        <p class="eyebrow eyebrow--red">Angebot</p>
-        <h2 id="angebot-titel">Nachhilfe in Deutsch und Mathe – und alles, was dazugehört.</h2>
-      </div>
+      <h2 id="angebot-titel">Nachhilfe in Deutsch und Mathe&nbsp;– und alles, was dazugehört.</h2>
     </header>
     <div class="subjects">
       <article class="heft heft--red">
@@ -216,6 +223,16 @@
       <div class="extras__intro">
         <h3>Und außerdem</h3>
         <p>Manchmal braucht es mehr als die wöchentliche Stunde. Auch dafür bin ich da.</p>
+        <p class="extras__contact">
+          <a class="contact-link" href="tel:+4982825743">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            08282&nbsp;5743
+          </a>
+          <a class="contact-link" href="mailto:info@lernstudio1234.de">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            E-Mail schreiben
+          </a>
+        </p>
       </div>
       <ul class="extras__list">
         <li>Ferienkurse, um versäumten Stoff aufzuarbeiten</li>
@@ -228,14 +245,63 @@
   </div>
 </section>
 
+<section id="lesen" class="section section--follows" aria-labelledby="lesen-titel">
+  <div class="wrap">
+    <header class="section-head section-head--plain">
+      <div>
+        <p class="eyebrow">Für zuhause</p>
+        <h2 id="lesen-titel">Warum Lesen für Kinder so wichtig ist</h2>
+      </div>
+    </header>
+    <div class="reading">
+      <div class="reading__reasons">
+        <div>
+          <h3>Lesen fördert das Nachdenken</h3>
+          <p>Beim Lesen folgt Ihr Kind einem Gedankengang im eigenen Tempo – und behält das Gelesene besser.</p>
+        </div>
+        <div>
+          <h3>Lesen regt die Fantasie an</h3>
+          <p>Wie sehen die Figuren aus, wie klingen ihre Stimmen? Vieles entsteht erst im Kopf Ihres Kindes.</p>
+        </div>
+        <div>
+          <h3>Lesen stärkt gute Eigenschaften</h3>
+          <p>Wer liest, übt Konzentration, Geduld und Einfühlungsvermögen – und lernt, Probleme zu durchdenken.</p>
+        </div>
+      </div>
+      <aside class="sheet reading__tips" aria-labelledby="lesetipps-titel">
+        <h3 class="sheet__title" id="lesetipps-titel">So wecken Sie die Leselust</h3>
+        <ul class="ticks">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Früh anfangen – am besten mit Vorlesen</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Eine lesefreundliche Umgebung schaffen</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Feste Offline-Zeiten für die ganze Familie</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Bücher immer griffbereit halten</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Selbst lesen – Kinder schauen sich Begeisterung ab</span>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <section id="preise" class="section section--yellow" aria-labelledby="preise-titel">
   <div class="wrap">
     <header class="section-head section-head--tight">
       <span class="num num--yellow" aria-hidden="true">3</span>
-      <div>
-        <p class="eyebrow eyebrow--ink">Preise</p>
-        <h2 id="preise-titel">Klare Preise, keine Anmeldegebühr.</h2>
-      </div>
+      <h2 id="preise-titel">Klare Preise, keine Anmeldegebühr.</h2>
     </header>
     <p class="lead">Der Monatspreis richtet sich nach Unterrichtszeit und Vertragslaufzeit. Je länger die Laufzeit, desto günstiger der Monat.</p>
 
@@ -249,7 +315,7 @@
         </div>
       </div>
 
-      <div class="terms" aria-live="polite">
+      <div class="terms">
         <section class="term is-active" data-term="y1" aria-labelledby="laufzeit-y1">
           <h3 class="term__title" id="laufzeit-y1">Vertragslaufzeit 1 Jahr</h3>
           <ul class="plans">
@@ -313,63 +379,7 @@
         <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
         <div><strong>August ist unterrichtsfrei</strong><span>Der Vertrag pausiert in diesem Monat, Gebühren fallen keine an.</span></div>
       </li>
-      <li>
-        <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><strong>Keine Anmeldegebühr</strong><span>Es gibt weder eine Anmeldegebühr noch eine Startpauschale.</span></div>
-      </li>
     </ul>
-  </div>
-</section>
-
-<section id="lesen" class="section" aria-labelledby="lesen-titel">
-  <div class="wrap">
-    <header class="section-head section-head--plain">
-      <div>
-        <p class="eyebrow">Für zuhause</p>
-        <h2 id="lesen-titel">Warum Lesen für Kinder so wichtig ist</h2>
-      </div>
-    </header>
-    <div class="reading">
-      <div class="reading__reasons">
-        <div>
-          <h3>Lesen fördert das Nachdenken</h3>
-          <p>Beim Lesen folgt Ihr Kind einem Gedankengang im eigenen Tempo – und behält das Gelesene besser.</p>
-        </div>
-        <div>
-          <h3>Lesen regt die Fantasie an</h3>
-          <p>Wie sehen die Figuren aus, wie klingen ihre Stimmen? Vieles entsteht erst im Kopf Ihres Kindes.</p>
-        </div>
-        <div>
-          <h3>Lesen stärkt gute Eigenschaften</h3>
-          <p>Wer liest, übt Konzentration, Geduld und Einfühlungsvermögen – und lernt, Probleme zu durchdenken.</p>
-        </div>
-      </div>
-      <aside class="sheet reading__tips" aria-labelledby="lesetipps-titel">
-        <h3 class="sheet__title" id="lesetipps-titel">So wecken Sie die Leselust</h3>
-        <ul class="ticks">
-          <li>
-            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Früh anfangen – am besten mit Vorlesen</span>
-          </li>
-          <li>
-            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Eine lesefreundliche Umgebung schaffen</span>
-          </li>
-          <li>
-            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Feste Offline-Zeiten für die ganze Familie</span>
-          </li>
-          <li>
-            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Bücher immer griffbereit halten</span>
-          </li>
-          <li>
-            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Selbst lesen – Kinder schauen sich Begeisterung ab</span>
-          </li>
-        </ul>
-      </aside>
-    </div>
   </div>
 </section>
 
@@ -378,10 +388,7 @@
     <div class="contact__text">
       <header class="section-head section-head--tight">
         <span class="num num--white" aria-hidden="true">4</span>
-        <div>
-          <p class="eyebrow eyebrow--white">Kontakt</p>
-          <h2 id="kontakt-titel">Lernen wir uns kennen.</h2>
-        </div>
+        <h2 id="kontakt-titel">Lernen wir uns kennen.</h2>
       </header>
       <p class="lead">Rufen Sie mich einfach an oder schreiben Sie mir ein paar Zeilen. Dann besprechen wir in Ruhe, wie ich Ihr Kind unterstützen kann.</p>
       <div class="contact__actions">
@@ -404,6 +411,18 @@
 </section>
 
 </main>
+
+<!-- Schmale Fenster: Kontaktleiste am unteren Rand. main.js blendet sie ein, solange weder der Einstieg noch der Kontaktabschnitt zu sehen ist. -->
+<nav class="callbar" aria-label="Schnellkontakt" data-callbar hidden>
+  <a class="callbar__link callbar__link--call" href="tel:+4982825743">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Anrufen
+  </a>
+  <a class="callbar__link" href="mailto:info@lernstudio1234.de">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+    E-Mail
+  </a>
+</nav>
 
 <footer class="site-footer">
   <div class="wrap site-footer__inner">

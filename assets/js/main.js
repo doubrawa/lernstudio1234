@@ -41,5 +41,26 @@ function initPortrait() {
   }
 }
 
+// Kontaktleiste (schmale Fenster): sichtbar, solange weder die Knöpfe im Einstieg
+// noch der Kontaktabschnitt im Bild sind. Die Breite regelt das Stylesheet.
+function initCallbar() {
+  const bar = document.querySelector('[data-callbar]');
+  const anchors = [document.querySelector('.hero__actions'), document.querySelector('#kontakt')];
+  if (!bar || anchors.includes(null) || !('IntersectionObserver' in window)) return;
+
+  const inView = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) inView.add(entry.target);
+      else inView.delete(entry.target);
+    });
+    bar.classList.toggle('is-visible', inView.size === 0);
+  });
+
+  anchors.forEach((anchor) => observer.observe(anchor));
+  bar.hidden = false;
+}
+
 initPricing();
 initPortrait();
+initCallbar();
