@@ -572,6 +572,17 @@ h3 {
   color: var(--ink);
 }
 
+/* Schmale Fenster: niedrigere Treppe, die unterste Stufe bleibt hoch genug für Ziffer und zwei Zeilen Text. */
+@media (max-width: 780px) {
+  .steps {
+    height: 200px;
+  }
+
+  .step--1 { --height: 46%; }
+  .step--2 { --height: 64%; }
+  .step--3 { --height: 82%; }
+}
+
 .step__num {
   font-family: var(--font-display);
   font-weight: 800;
@@ -900,6 +911,13 @@ h3 {
   font-weight: 400;
   font-size: 1.625rem;
   line-height: 1.7;
+}
+
+/* In drei schmalen Spalten muss „Sachunterricht“ als längstes Wort ins Etikett passen. */
+@media (min-width: 960px) {
+  .heft__name {
+    font-size: clamp(1.25rem, 2.1vw, 1.625rem);
+  }
 }
 
 .heft__class {
@@ -1254,6 +1272,11 @@ h3 {
   border-top: 1px solid var(--line);
   font-size: 1rem;
   color: var(--ink-soft);
+}
+
+.contact__card .contact-link {
+  margin-top: 4px;
+  font-size: 1rem;
 }
 
 /* ---------- Fuß ---------- */
