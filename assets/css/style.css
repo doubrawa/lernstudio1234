@@ -1314,66 +1314,6 @@ h3 {
   color: var(--yellow);
 }
 
-/* ---------- Kontaktleiste (nur schmale Fenster, nur mit JavaScript) ---------- */
-
-.callbar {
-  display: none;
-}
-
-@media (max-width: 780px) {
-  .callbar {
-    position: fixed;
-    inset: auto 0 0;
-    z-index: 5;
-    display: flex;
-    gap: 8px;
-    padding: 8px var(--pad) calc(8px + env(safe-area-inset-bottom, 0px));
-    background: var(--ink);
-    visibility: hidden;
-    transform: translateY(100%);
-    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0s 0.25s;
-  }
-
-  .callbar.is-visible {
-    visibility: visible;
-    transform: none;
-    transition-delay: 0s;
-  }
-
-  .callbar__link {
-    flex: 1 1 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 48px;
-    border-radius: var(--radius-pill);
-    background: var(--white);
-    color: var(--ink);
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .callbar__link:hover {
-    color: var(--ink);
-  }
-
-  .callbar__link--call,
-  .callbar__link--call:hover {
-    background: var(--red);
-    color: var(--white);
-  }
-
-  .callbar :focus-visible {
-    outline-color: var(--white);
-  }
-
-  /* Angesprungene Ziele und fokussierte Elemente bleiben über der Leiste sichtbar. */
-  html {
-    scroll-padding-bottom: 76px;
-  }
-}
-
 /* ---------- Rechtstexte (Impressum, Datenschutz) ---------- */
 
 .legal {
@@ -1435,8 +1375,7 @@ h3 {
     animation: none;
   }
 
-  .btn,
-  .callbar {
+  .btn {
     transition: none;
   }
 }
