@@ -1,0 +1,21 @@
+Schriften in diesem Ordner
+==========================
+
+Alle drei Schriften stehen unter der SIL Open Font License, Version 1.1.
+Der vollständige Lizenztext: https://openfontlicense.org/open-font-license-official-text/
+
+bricolage-grotesque.woff2
+  Bricolage Grotesque – Copyright The Bricolage Grotesque Project Authors
+  https://github.com/ateliertriay/bricolage
+
+figtree.woff2
+  Figtree – Copyright The Figtree Project Authors
+  https://github.com/erikdkennedy/figtree
+
+playwrite-de-la.woff2
+  Playwrite DE LA (Lateinische Ausgangsschrift) – Copyright The Playwrite Project Authors
+  https://github.com/TypeTogether/Playwrite
+
+Bezogen am 16.11.2026 von Google Fonts (fonts.gstatic.com), jeweils der Zeichensatz „latin“
+als variable Schrift. Die Dateien liegen hier lokal, damit die Website beim Aufruf keine
+Verbindung zu Google aufbaut.
