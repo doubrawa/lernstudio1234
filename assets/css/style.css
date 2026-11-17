@@ -493,6 +493,13 @@ h3 {
   bottom: 0;
   width: 100%;
   height: 12px;
+  /* Zeichnet sich einmal von links nach rechts, sobald die Treppe fast steht. */
+  animation: squiggle-draw 0.7s cubic-bezier(0.65, 0, 0.35, 1) 0.9s both;
+}
+
+@keyframes squiggle-draw {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0); }
 }
 
 .hero__actions {
@@ -860,6 +867,23 @@ h3 {
 .heft--blue { background: var(--blue); }
 .heft--green { background: var(--green); }
 
+/* Unter der Maus hebt sich ein Heft leicht vom Tisch. Reine Zier: Die Hefte sind keine Links. */
+@media (hover: hover) and (pointer: fine) {
+  .heft {
+    --tilt: -1deg;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .heft:nth-child(even) {
+    --tilt: 1deg;
+  }
+
+  .heft:hover {
+    transform: translateY(-4px) rotate(var(--tilt));
+    box-shadow: var(--shadow-sheet);
+  }
+}
+
 .heft__label {
   display: flex;
   flex-direction: column;
@@ -1123,6 +1147,16 @@ h3 {
   display: block;
 }
 
+/* Beim Umschalten blenden die neuen Preise ein. Karten und Unterrichtszeiten bleiben stehen. */
+.pricing.is-enhanced .term.is-active .plan__price {
+  animation: price-in 0.3s ease-out;
+}
+
+@keyframes price-in {
+  from { opacity: 0; transform: translateY(0.3em); }
+  to { opacity: 1; transform: none; }
+}
+
 .pricing.is-enhanced .term__title {
   position: absolute;
   width: 1px;
@@ -1371,11 +1405,19 @@ h3 {
     scroll-behavior: auto;
   }
 
-  .step {
+  .step,
+  .hero__squiggle,
+  .pricing.is-enhanced .term.is-active .plan__price {
     animation: none;
   }
 
-  .btn {
+  .btn,
+  .heft {
     transition: none;
+  }
+
+  .heft:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
