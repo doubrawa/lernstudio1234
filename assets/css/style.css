@@ -545,23 +545,20 @@ h3 {
   background: var(--fill);
   color: var(--white);
   text-decoration: none;
-  /* Nur „backwards": Nach dem Hochwachsen gibt die Animation transform wieder frei, sonst griffe der Hover nicht. */
-  animation: step-rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  animation: step-rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
   animation-delay: calc(var(--order) * 90ms);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  transition: height 0.2s ease-out;
 }
 
-/* Unter Maus und Tastaturfokus wächst die Stufe ein Stück. Der Schatten in der Stufenfarbe füllt die Lücke am Fuß. */
+/* Unter Maus und Tastaturfokus wird die Stufe wirklich höher: Der Fuß bleibt stehen, nur die Oberkante steigt. */
 @media (hover: hover) and (pointer: fine) {
   .step:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 12px 0 var(--fill);
+    height: calc(var(--height) + 12px);
   }
 }
 
 .step:focus-visible {
-  transform: translateY(-12px);
-  box-shadow: 0 12px 0 var(--fill);
+  height: calc(var(--height) + 12px);
 }
 
 .step:hover {
@@ -1433,7 +1430,10 @@ h3 {
   }
 
   .step:hover,
-  .step:focus-visible,
+  .step:focus-visible {
+    height: var(--height);
+  }
+
   .heft:hover {
     transform: none;
     box-shadow: none;
